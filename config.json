@@ -1,0 +1,17 @@
+{
+  "nodes": [{
+    "name": "products",
+    "port": 12340,
+    "maxSize": 10
+  }, {
+    "name": "orders",
+    "port": 12341,
+    "maxSize": 1000
+  }, {
+    "name": "customers",
+    "port": 12342,
+    "maxSize": 100
+  }],
+  "port": 8080,
+  "mono": false
+}
