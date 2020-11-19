@@ -41,34 +41,34 @@ Commands:
 
 ## Cluster REST API
 
-GET /:namespace/:key
+**GET** /:namespace/:key
 
     retrieves the value by key and promotes the key in LRU queue
     if key already expired makes sure that key is removed
     if key not found or expired returns 404 error
     
-POST /:namespace/:key 
+**POST** /:namespace/:key 
         {value, expiration}
     
     creates the key - value pair
     if key exists promotes the key in LRU queue and returns 400 error
         
-PUT /:namespace/:key 
+**PUT** /:namespace/:key 
             {value, expiration}
             
      updates the key - value pair
      if key not found or expired returns 404 error
      
-DELETE /:namespace/:key  
+**DELETE** /:namespace/:key  
 
     removes key - value pair
     if key not found or expired returns 404 error
     
-GET /manage/:namespace/info
+**GET** /manage/:namespace/info
     
     shows the cache info
     
-POST /manage/:namespace/flush
+**POST** /manage/:namespace/flush
 
     empties out the cache   
     
