@@ -13,5 +13,5 @@
     "maxSize": 100
   }],
   "port": 8080,
-  "mono": false
+  "mono": true
 }
